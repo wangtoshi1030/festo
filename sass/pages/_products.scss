@@ -1,0 +1,80 @@
+
+
+
+.section{
+    .bgimg{
+        background-image: url(../../clothes.img/IMG_5113.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        h1{
+            color: white;
+            font-size: 80px;
+            // text-align: center;
+            padding: 250px;
+            font-family: 'Great Vibes', cursive;
+            font-weight: bold;
+        }
+    }
+    .pro{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: italic;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .clothesBox{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .clt{
+            transition: 0.5s;
+            // transform: translate(10px ,10px);
+            // opacity: 0.1;
+            // transition: 3s;
+            // height: 400px;
+            margin: 50px;
+            img{
+                width: 200px;
+                height: 350px;
+            }
+            p{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+        }
+        .clt:hover{
+            transition: 0.5s;
+            box-shadow: 5px 5px 5px 5px gray;
+        }
+        // .fadein{
+        //     opacity: 1;
+        //     transform: translate(0,0);
+        // }
+    }
+
+    .fade {
+        opacity: 0.1;
+        transform : translate(30px, -50px);
+        transition: 3000ms;
+    }
+    .fade.scrollin{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+@media screen and(max-width:500px){
+    .section{
+        .bgimg{
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+}

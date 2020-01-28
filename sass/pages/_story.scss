@@ -1,0 +1,84 @@
+
+.intro{
+    width: 80%;
+    margin: 0 auto;
+    .story{
+        .box1{
+            display: flex;
+            transition: 0.5s;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .box1:hover{
+            transition: 0.5s;
+            box-shadow: 5px 5px 5px 5px gray;
+        }
+        .box2{
+            display: flex;
+            // border: 2px solid black;
+            transition: 0.5s;
+            margin-bottom: 100px;
+        }
+        .box2:hover{
+            transition: 0.5s;
+            box-shadow: -5px 5px 5px 5px gray;
+        }
+        .box3{
+            display: flex;
+            transition: 0.5s;
+            // border: 2px solid pink;
+            margin-bottom: 100px;
+        }
+        .box3:hover{
+            transition: 0.5s;
+            // box-shadow: 5px 2px 5px 2px gray;
+            box-shadow: 5px 5px 5px 5px gray;
+        }
+        .box4{
+            display: flex;
+            transition: 0.5s;
+            margin-bottom: 100px;
+        }
+        .vox{
+            transform: translateX(-150px);
+            opacity: 0;
+            transition: opacity 1s ,transform 0.5s;
+        }
+        .r-box{
+            transform: translateX(150px);
+            opacity: 0;
+            transition: opacity 1s ,transform 0.5s;
+        }
+        .fadein{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .box4:hover{
+            transition: 0.5s;
+            box-shadow: -5px 5px 5px 5px gray;
+        }
+        .explainRight{
+            p{
+                padding-right: 30%;
+            }
+        }
+        .explainLeft{
+            p{
+                padding-left: 30%;
+            }
+        }
+        .originLeft{
+            img{
+                height: 500px;
+                width: 400px;
+            }
+        }
+        .originRight{
+            img{
+                height: 500px;
+                width: 400px;
+            }
+        }
+    }
+}
+
